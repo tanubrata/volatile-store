@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volatile Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #1e1a19;
       color: #fff2e6;
       display: flex;
@@ -18,16 +18,16 @@
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       background-color: #2b2624;
       padding: 20px 40px;
     }
 
-    .logo {
+    header img {
       height: 60px;
+      margin-right: 20px;
     }
 
-    .company-name {
+    .header-text {
       font-size: 2rem;
       color: #ffa534;
       font-weight: bold;
@@ -41,48 +41,53 @@
       text-align: center;
     }
 
-    .flashing {
+    .flash {
       font-size: 1.5em;
-      font-style: italic;
       color: #ffc266;
+      font-style: italic;
       animation: flash 1.5s infinite;
     }
 
     @keyframes flash {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+      50% { opacity: 0.2; }
     }
 
     footer {
       background-color: #2b2624;
       padding: 20px;
-      font-size: 0.95em;
       text-align: center;
+      font-size: 0.95em;
       color: #ccc;
     }
 
-    .highlight {
-      color: #ffa534;
+    .footer-title {
       font-weight: bold;
+      color: #ffa534;
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/image0.jpeg" alt="Volatile Store Logo" class="logo" />
-    <div class="company-name">Volatile Store</div>
+    <img src="images/image0.jpeg" alt="Volatile Store Logo">
+    <div class="header-text">Volatile Store</div>
   </header>
 
   <main>
-    <div class="flashing">Website under development. Check back soon!</div>
+    <div class="flash">Website under development. Check back soon!</div>
   </main>
 
   <footer>
-    <span class="highlight">Intelligic IT Contingency LLC</span>
-    Address: 99 Wall St. Ste-486, New York, NY 10005<br />
+    <div style="color: #ffa534; font-size: 1.4em; font-weight: bold; margin-bottom: 4px;">
+      Volatile Store
+    </div>
+    <div style="color: #ccc; font-size: 1em; margin-bottom: 8px;">
+      Intelligic IT Contingency LLC
+    </div>
+    Address: 99 Wall St. Ste-486, New York, NY 10005<br>
     Phone: (212) 419-1486
   </footer>
 
